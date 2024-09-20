@@ -1,3 +1,4 @@
+let homeBtn = 0;
 function projectsHov(){
     document.querySelector(".projects").style.color = "black";
     document.querySelector(".projects").style.fontSize = "large";
@@ -11,23 +12,80 @@ function projectsHov(){
     document.querySelector(".imgs").style.top = "20vh";   
     document.querySelector(".infoSection").style.top= "5vh";   
     document.querySelector(".infoSection").style.bottom = "20vh";   
+    document.querySelector(".infoSection").style.width = "15%";   
     document.querySelector(".aboutinfo").innerHTML = "Հանդես գալով որպես Կապալառու՝ կառուցել ենք բազմաթիվ բազմաբնակարան բնակելի համալիրներ և արտադրական նշանակության շինություններ մայրաքաղաքում և մարզերում։ Ունենալով երկար տարիների փորձ և հմտություն՝ մի շարք գործընկերների համար հանդիսանում ենք միակ Շինարարը։ Երևան քաղաքում բնակելի համալիրներից մի քանիսի կառուցման տարեթվերը և հասցեներն են՝";
+    document.querySelector(".phoneInfo").style.display = "none";
+    document.querySelector(".mailInfo").style.display = "none";
+    document.querySelector(".mailInfo").style.display = "none";
+    document.querySelector(".imgs").style.display = "flex";
+    
+    document.querySelector(".phone").style.padding = "0";    
+    document.querySelector(".phone").style.backgroundColor = "transparent";
+    document.querySelector(".phone").style.position = "relative";
+    document.querySelector(".phone").style.bottom = "14vh";
+    document.querySelector(".phone").style.bottom = "0";
+
+    document.querySelector(".mail").style.bottom = "14vh";
+    document.querySelector(".mail").style.backgroundColor = "transparent";
+    document.querySelector(".mail").style.position = "relative";
+    document.querySelector(".mail").style.padding = "0";    
+    document.querySelector(".mail").style.bottom = "";
+    
+    //add first hr
+    document.querySelector("hr").style.display = "block";
+    document.querySelector(".footer").style.top = "90vh";
+
+    //hide second hr
+    document.querySelector(".hr1").style.display = "none";
+    homeBtn = 1
 }
 function homeHov(){
-    document.querySelector(".home").style.color = "black";
-    document.querySelector(".home").style.fontSize = "large";
-    document.querySelector(".projects").style.color = "white";
-    document.querySelector(".projects").style.fontSize = "medium";
-    document.querySelector(".projects").style.fontSize = "medium";
-    document.querySelector(".aboutUs").style.color = "white";
-    document.querySelector(".aboutUs").style.fontSize = "medium";
+    if (homeBtn === 1){
+        document.querySelector(".home").style.color = "black";
+        document.querySelector(".home").style.fontSize = "large";
+        document.querySelector(".projects").style.color = "white";
+        document.querySelector(".projects").style.fontSize = "medium";
+        document.querySelector(".projects").style.fontSize = "medium";
+        document.querySelector(".aboutUs").style.color = "white";
+        document.querySelector(".aboutUs").style.fontSize = "medium";
+        
+        document.querySelector(".infoSection").style.top= "10vh";   
+        document.querySelector(".arrow").style.display = "none";   
+        document.querySelector(".infoSection").style.bottom = "10vh";  
+        document.querySelector(".infoSection").style.width = "15%";   
+        document.querySelector(".aboutinfo").style.height = "auto";
+        document.querySelector(".aboutinfo").style.height = "auto";
     
-    document.querySelector(".infoSection").style.top= "10vh";   
-    document.querySelector(".arrow").style.display = "none";   
-    document.querySelector(".infoSection").style.bottom = "10vh";  
-    document.querySelector(".infoSection").style.width = "15%";   
-    document.querySelector(".aboutinfo").style.height = "auto";
-    document.querySelector(".aboutinfo").innerHTML = "ԱՁ Իզմիր Վարդանյանը գործունեություն է ծավալում 2012թ․ -ից։ Մենք կատարում ենք որակյալ շինարարական աշխատանքներ։ Տարիների ընթացքում գրավել ենք մեր ուրույն տեղը ոլորտի լավագույնների մեջ՝ ստեղծելով պրոֆեսիոնալ թիմ և լինելով հուսալի գործընկեր"
+    
+         
+        document.querySelector(".phoneInfo").style.display = "none";
+        document.querySelector(".mailInfo").style.display = "none";
+        document.querySelector(".mailInfo").style.display = "none";
+        document.querySelector(".imgs").style.display = "flex";
+        
+        document.querySelector(".phone").style.padding = "0";    
+        document.querySelector(".phone").style.backgroundColor = "transparent";
+        document.querySelector(".phone").style.position = "relative";
+        document.querySelector(".phone").style.bottom = "14vh";
+        document.querySelector(".phone").style.bottom = "0";
+    
+        document.querySelector(".mail").style.bottom = "14vh";
+        document.querySelector(".mail").style.backgroundColor = "transparent";
+        document.querySelector(".mail").style.position = "relative";
+        document.querySelector(".mail").style.padding = "0";    
+        document.querySelector(".mail").style.bottom = "";
+    
+    
+        document.querySelector(".aboutinfo").innerHTML = "ԱՁ Իզմիր Վարդանյանը գործունեություն է ծավալում 2012թ․ -ից։ Մենք կատարում ենք որակյալ շինարարական աշխատանքներ։ Տարիների ընթացքում գրավել ենք մեր ուրույն տեղը ոլորտի լավագույնների մեջ՝ ստեղծելով պրոֆեսիոնալ թիմ և լինելով հուսալի գործընկեր"
+    
+    
+        //add first hr
+        document.querySelector("hr").style.display = "block";
+        document.querySelector(".footer").style.top = "90vh";
+
+        //hide second hr
+        document.querySelector(".hr1").style.display = "none";
+}
 }
 function aboutHov(){
     document.querySelector(".aboutUs").style.color = "black";
@@ -36,7 +94,63 @@ function aboutHov(){
     document.querySelector(".projects").style.fontSize = "medium";
     document.querySelector(".home").style.color = "white";
     document.querySelector(".home").style.fontSize = "medium";
+    document.querySelector(".aboutinfo").innerHTML = "Գործընկերներին` <br> Լինելով ոլորտի առաջատարներից՝ երաշխավորում ենք առանձնահատուկ մոտեցում, ստանդարտներին համապատասխան որակյալ աշխատանք։ Շինարարական աշխատանքները տարաբնույթ են, շենքների կառուցումից զատ կատարում ենք նաև <br>- հողային աշխատանքներ <br>- պատերի շար <br>- էլեկտրալարերի մոնտաժ <br>- սվաղ <br>- գաջապատում <br>- հարդարում <br>- սալիկապատում <br>- բետոնով հարթեցում և այլն։"
+    document.querySelector(".aboutinfo").style.overflow = "auto";
+    
+    document.querySelector(".infoDiv").style.top = "50vh";   
+    document.querySelector(".infoSection").style.width = "50vh";
+    document.querySelector(".infoSection").style.top= "5vh";   
+    document.querySelector(".infoSection").style.bottom = "20vh"; 
+    document.querySelector(".imgs").style.top = "20vh";   
+    document.querySelector(".imgs").style.display = "none";
+  
+
+    document.querySelector(".phone").style.position = "absolute";
+    document.querySelector(".phone").style.bottom = "14vh";
+    document.querySelector(".phone").style.left = "-1vw";
+    document.querySelector(".phone").style.backgroundColor = "rgba(82, 81, 81, 0.822)";
+    document.querySelector(".phone").style.padding = "1vw";
+    document.querySelector(".phone").style.borderRadius = "0.5vw";
+
+    document.querySelector(".mail").style.position = "absolute";
+    document.querySelector(".mail").style.bottom = "5vh";
+    document.querySelector(".mail").style.left = "-1.2vw";
+    document.querySelector(".mail").style.backgroundColor = "rgba(82, 81, 81, 0.822)";
+    document.querySelector(".mail").style.padding = "1vw";
+    document.querySelector(".mail").style.borderRadius = "0.5vw";
+    
+    document.querySelector(".phoneInfo").style.display = "block";
+    document.querySelector(".phoneInfo").style.position = "relative";
+    document.querySelector(".phoneInfo").style.bottom = "5vh";
+    document.querySelector(".phoneInfo").style.left = "7vw";
+    document.querySelector(".phoneInfo").style.backgroundColor = "rgba(82, 81, 81, 0.822)";
+    document.querySelector(".phoneInfo").style.width = "20vw";
+    document.querySelector(".phoneInfo").style.padding = "1vw";
+    document.querySelector(".phoneInfo").style.color = "white";
+    document.querySelector(".phoneInfo").style.fontWeight = "bold";
+    document.querySelector(".phoneInfo").style.borderRadius = "0.5vw";
+
+    
+    document.querySelector(".mailInfo").style.display = "block";
+    document.querySelector(".mailInfo").style.position = "relative";
+    document.querySelector(".mailInfo").style.bottom = "3.5vh";
+    document.querySelector(".mailInfo").style.left = "7.2vw";
+    document.querySelector(".mailInfo").style.backgroundColor = "rgba(82, 81, 81, 0.822)";
+    document.querySelector(".mailInfo").style.width = "20vw";
+    document.querySelector(".mailInfo").style.padding = "1vw";
+    document.querySelector(".mailInfo").style.color = "white";
+    document.querySelector(".mailInfo").style.fontWeight = "bold";
+    document.querySelector(".mailInfo").style.borderRadius = "0.5vw";
+    
+    //add first hr
+    document.querySelector(".hr").style.display = "none";
+    document.querySelector(".footer").style.top = "70vh";
+    
+    //hide second hr
+    document.querySelector(".hr1").style.display = "block";
+    homeBtn = 1;
 }
+
 let arrowValue = false;
 function arrow(){
     if(arrowValue === false){
@@ -61,3 +175,35 @@ function arrow(){
         arrowValue = false
     }
 }
+
+let imgCounter = 0;
+function mainImg(num){
+    let section = document.querySelector(".imgs");
+        let img = document.getElementsByClassName(num)
+        let showImg = img[0]
+
+    if(imgCounter === 0){
+        document.querySelector(".imgs").style.overflow = "hidden"
+        section.style.width = "75vw"
+        section.style.height = "73vh"
+        section.style.top = "-55vh"
+        showImg.style.position = "fixed"
+        showImg.style.width = "74vw"
+        showImg.style.height = "71vh"
+        
+        imgCounter = 1;
+    }else{
+        document.querySelector(".imgs").style.overflow = "auto"
+        section.style.width = "30vw"
+        section.style.height = "17.5vh"
+        section.style.top = "0"
+        showImg.style.position = "static"        
+        showImg.style.width = "15vw"
+        showImg.style.height = "16vh"
+        imgCounter = 0;
+    }
+
+
+
+}
+

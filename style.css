@@ -168,11 +168,14 @@ body{
   overflow: auto;
   display: flex;
 }
+.imgs .i1{
+  margin-left:0.5vw;
+}
 .imgs::-webkit-scrollbar {
   width: 1vh;/* width of the entire scrollbar */
   background:transparent;
 }
-.imgs div{
+.imgs img{
   margin-left: 1vw;
 }
 .imgs img:hover{
@@ -185,8 +188,8 @@ body{
   left: 60vw;
   text-align: center;
 }
-hr{
-  width: 100%;
+.hr1{
+  display: none;
 }
 .footer img{
   margin-left: 2vw;
@@ -197,4 +200,7 @@ hr{
 .aboutinfo::-webkit-scrollbar {
   width: 0.2vw;/* width of the entire scrollbar */
   background: white;
+}
+.phoneInfo, .mailInfo{
+  display: none;
 }
