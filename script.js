@@ -1,4 +1,5 @@
 let homeBtn = 0;
+let imgCounter = 0;
 function projectsHov(){
     document.querySelector(".projects").style.color = "black";
     document.querySelector(".projects").style.fontSize = "large";
@@ -30,33 +31,40 @@ function projectsHov(){
     document.querySelector(".mail").style.position = "relative";
     document.querySelector(".mail").style.padding = "0";    
     document.querySelector(".mail").style.bottom = "";
+
     
+
     //add first hr
     document.querySelector("hr").style.display = "block";
     document.querySelector(".footer").style.top = "90vh";
 
     //hide second hr
     document.querySelector(".hr1").style.display = "none";
-    homeBtn = 1
+    
+    
 }
 function homeHov(){
-    if (homeBtn === 1){
-        document.querySelector(".home").style.color = "black";
-        document.querySelector(".home").style.fontSize = "large";
-        document.querySelector(".projects").style.color = "white";
-        document.querySelector(".projects").style.fontSize = "medium";
-        document.querySelector(".projects").style.fontSize = "medium";
-        document.querySelector(".aboutUs").style.color = "white";
-        document.querySelector(".aboutUs").style.fontSize = "medium";
+    document.querySelector(".home").style.color = "black";
+    document.querySelector(".home").style.fontSize = "large";
+    document.querySelector(".projects").style.color = "white";
+    document.querySelector(".projects").style.fontSize = "medium";
+    document.querySelector(".projects").style.fontSize = "medium";
+    document.querySelector(".aboutUs").style.color = "white";
+    document.querySelector(".aboutUs").style.fontSize = "medium";
+    document.querySelector(".infoDiv").style.top = "70vh";   
+    
+    
         
-        document.querySelector(".infoSection").style.top= "10vh";   
+        
         document.querySelector(".arrow").style.display = "none";   
+        document.querySelector(".infoSection").style.top = "-10vh";   
+        document.querySelector(".imgs").style.top = "0vh";
         document.querySelector(".infoSection").style.bottom = "10vh";  
         document.querySelector(".infoSection").style.width = "15%";   
         document.querySelector(".aboutinfo").style.height = "auto";
         document.querySelector(".aboutinfo").style.height = "auto";
     
-    
+
          
         document.querySelector(".phoneInfo").style.display = "none";
         document.querySelector(".mailInfo").style.display = "none";
@@ -68,13 +76,13 @@ function homeHov(){
         document.querySelector(".phone").style.position = "relative";
         document.querySelector(".phone").style.bottom = "14vh";
         document.querySelector(".phone").style.bottom = "0";
+        
     
         document.querySelector(".mail").style.bottom = "14vh";
         document.querySelector(".mail").style.backgroundColor = "transparent";
         document.querySelector(".mail").style.position = "relative";
         document.querySelector(".mail").style.padding = "0";    
         document.querySelector(".mail").style.bottom = "";
-    
     
         document.querySelector(".aboutinfo").innerHTML = "ԱՁ Իզմիր Վարդանյանը գործունեություն է ծավալում 2012թ․ -ից։ Մենք կատարում ենք որակյալ շինարարական աշխատանքներ։ Տարիների ընթացքում գրավել ենք մեր ուրույն տեղը ոլորտի լավագույնների մեջ՝ ստեղծելով պրոֆեսիոնալ թիմ և լինելով հուսալի գործընկեր"
     
@@ -85,7 +93,7 @@ function homeHov(){
 
         //hide second hr
         document.querySelector(".hr1").style.display = "none";
-}
+
 }
 function aboutHov(){
     document.querySelector(".aboutUs").style.color = "black";
@@ -101,7 +109,6 @@ function aboutHov(){
     document.querySelector(".infoSection").style.width = "50vh";
     document.querySelector(".infoSection").style.top= "5vh";   
     document.querySelector(".infoSection").style.bottom = "20vh"; 
-    document.querySelector(".imgs").style.top = "20vh";   
     document.querySelector(".imgs").style.display = "none";
   
 
@@ -160,6 +167,7 @@ function arrow(){
         document.querySelector(".infoSection").style.width = "50vh";    
         document.querySelector(".aboutinfo").style.height = "30vh";
         document.querySelector(".aboutinfo").style.rotate = "30vh";
+
         arrowValue = true
     }else{
         document.querySelector(".arrow").src = "static/Arrow 1.png"
@@ -171,12 +179,12 @@ function arrow(){
         document.querySelector(".imgs").style.top = "20vh";   
         document.querySelector(".infoSection").style.top= "5vh";   
         document.querySelector(".infoSection").style.bottom = "20vh";   
+
         document.querySelector(".aboutinfo").innerHTML = "Հանդես գալով որպես Կապալառու՝ կառուցել ենք բազմաթիվ բազմաբնակարան բնակելի համալիրներ և արտադրական նշանակության շինություններ մայրաքաղաքում և մարզերում։ Ունենալով երկար տարիների փորձ և հմտություն՝ մի շարք գործընկերների համար հանդիսանում ենք միակ Շինարարը։ Երևան քաղաքում բնակելի համալիրներից մի քանիսի կառուցման տարեթվերը և հասցեներն են՝";
         arrowValue = false
     }
 }
 
-let imgCounter = 0;
 function mainImg(num){
     let section = document.querySelector(".imgs");
         let img = document.getElementsByClassName(num)
@@ -186,24 +194,28 @@ function mainImg(num){
         document.querySelector(".imgs").style.overflow = "hidden"
         section.style.width = "75vw"
         section.style.height = "73vh"
-        section.style.top = "-55vh"
+        section.style.top = "-57vh"
         showImg.style.position = "fixed"
         showImg.style.width = "74vw"
         showImg.style.height = "71vh"
-        
+        document.querySelector(".infoSection").style.display = "none"
+
+        document.querySelector(".infoDiv").style.top = "69vh";   
+
         imgCounter = 1;
     }else{
         document.querySelector(".imgs").style.overflow = "auto"
         section.style.width = "30vw"
         section.style.height = "17.5vh"
-        section.style.top = "0"
+        section.style.top = "20vh"
         showImg.style.position = "static"        
         showImg.style.width = "15vw"
         showImg.style.height = "16vh"
+        document.querySelector(".infoSection").style.display = "block"
+        document.querySelector(".infoSection").style.top= "7vh";   
+        document.querySelector(".infoDiv").style.top = "50vh";   
+
         imgCounter = 0;
     }
-
-
-
 }
 
