@@ -8,28 +8,31 @@
 </head>
 <body>
     <div class="mainDiv">
-        <p class="title">Աձ Իզմիր <br>Վարդանյան</p>
-        <nav class="slidemenu" onload="test()">
-            <!-- Item 1 -->
-            <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" checked/>
-            <label for="slide-item-1"><span onclick="projectsHov()" class="projects">Աշխատանքներ</span></label>
-            
-            <!-- Item 2 -->
-            <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle"/>
-            <label for="slide-item-2"><span onclick="homeHov()" class="home">Հիմնական</span></label>
-            
-            <!-- Item 3 -->
-            <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
-            <label for="slide-item-3"><span onclick="aboutHov()" class="aboutUs">Մեր Մասին</span></label>
-            <br>
-            <br>            
-            <!-- Bar -->
-            <div class="slider">
-              <div class="bar"></div>
-            </div>
-        </nav>
+        <div class="header">
+            <p class="title">Աձ Իզմիր <br>Վարդանյան</p>
+            <nav class="slidemenu" onload="test()">
+                <!-- Item 1 -->
+                <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle" checked/>
+                <label for="slide-item-1"><span onclick="projectsHov()" class="projects">Աշխատանքներ</span></label>
+                
+                <!-- Item 2 -->
+                <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle"/>
+                <label for="slide-item-2"><span onclick="homeHov()" class="home">Հիմնական</span></label>
+                
+                <!-- Item 3 -->
+                <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+                <label for="slide-item-3"><span onclick="aboutHov()" class="aboutUs">Մեր Մասին</span></label>
+                <br>
+                <br>            
+                <!-- Bar -->
+                <div class="slider">
+                  <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+        
     </div>
-    <div class="infoDiv">
+    
         <div class="infoSection">
             <p class="aboutinfo">ԱՁ Իզմիր Վարդանյանը գործունեություն է ծավալում 2012թ․
                 -ից։ Մենք կատարում ենք
@@ -38,7 +41,6 @@
                 գործընկեր</p>
                 <img onclick="arrow()" class="arrow" src="static/Arrow 1.png" alt="arrow">
         </div>
-          
        
         <div class="imgs">
             <img src="static/5422419997185138637.jpg" onclick="mainImg('i1')" class="i1" alt="" width="250vw" height="150vh">
@@ -57,10 +59,11 @@
     </div>
     <div class="footer">
         <hr class="hr">
-        <img src="static/image 4.png" class="phone" alt="mail" width="40vw" height="auto">
-        <p class="phoneInfo">+374 94-58-59-22</p>
-        <img src="static/image 5.png" class="mail" alt="mail" width="50vw" height="auto">
-        <p class="mailInfo"> fidoraizo@gmail.com</p>
+        <div class="infopic">
+            <img src="static/image 4.png" class="phone" alt="mail" width="40vw" height="auto">
+            <img src="static/image 5.png" class="mail" alt="mail" width="50vw" height="auto">            
+        </div>
+        
         <hr class="hr1"> 
     </div>
 </body>
