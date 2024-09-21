@@ -104,32 +104,32 @@ function arrow(){
     }
 }
 
-function mainImg(num){
-    let section = document.querySelector(".imgs");
-    let img = document.getElementsByClassName(num)
-    let showImg = img[0]
+// function mainImg(num){
+//     let section = document.querySelector(".imgs");
+//     let img = document.getElementsByClassName(num)
+//     let showImg = img[0]
 
-    if(imgCounter === 0){
-        document.querySelector(".imgs").style.overflow = "hidden"
-        section.style.width = "75vw"
-        section.style.height = "73vh"
-        showImg.style.position = "fixed"
-        showImg.style.width = "74vw"
-        showImg.style.height = "71vh"
-        document.querySelector(".infoSection").style.display = "none"
+//     if(imgCounter === 0){
+//         document.querySelector(".imgs").style.overflow = "hidden"
+//         section.style.width = "75vw"
+//         section.style.height = "73vh"
+//         showImg.style.position = "fixed"
+//         showImg.style.width = "74vw"
+//         showImg.style.height = "71vh"
+//         document.querySelector(".infoSection").style.display = "none"
 
 
-        imgCounter = 1;
-    }else{
-        document.querySelector(".imgs").style.overflow = "auto"
-        section.style.width = "30vw"
-        section.style.height = "17.5vh"
-        showImg.style.position = "static"        
-        showImg.style.width = "15vw"
-        showImg.style.height = "16vh"
-        document.querySelector(".infoSection").style.display = "block"
+//         imgCounter = 1;
+//     }else{
+//         document.querySelector(".imgs").style.overflow = "auto"
+//         section.style.width = "30vw"
+//         section.style.height = "17.5vh"
+//         showImg.style.position = "static"        
+//         showImg.style.width = "15vw"
+//         showImg.style.height = "16vh"
+//         document.querySelector(".infoSection").style.display = "block"
 
-        imgCounter = 0;
-    }
-}
+//         imgCounter = 0;
+//     }
+//}
 
