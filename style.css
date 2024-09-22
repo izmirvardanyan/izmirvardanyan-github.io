@@ -34,10 +34,9 @@ body{
 }
 
 .slidemenu{
-  margin-left: 40vw;
   font-family: arial, sans-serif;
   width: 600px;
-  margin: -7vh auto;
+  margin: -7vh 40vw;
   overflow: hidden;
 }
 
@@ -222,4 +221,54 @@ body{
 }
 .infobook{
   display: none;
+}
+
+/* display width 10 */
+@media (max-width: 1024px) {
+  .infoSection{
+    top: -50vh;
+  }
+}
+@media (max-width: 768px) {
+  .title{
+    width: 92%;
+  }
+  .slidemenu{
+    margin:5vh 26vw ;
+    width: 450px;
+  }
+  .slider{
+    margin:2vh 0 0 6.5vw;
+  }
+  .imgs{
+    width: 80%;
+    height: 29vh;
+    display: block;
+    padding: 2vw;
+  }
+  .imgs img{
+    width: 100%;
+    height: auto;
+  }
+  .slider{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
+}
+@media (max-width: 610px) {
+  .slidemenu{
+    width: 35vw;
+    margin:5vw 3vw;
+  }
+  .slidemenu label{
+    margin-top: 2vh;
+  }
+  .infoSection{
+    margin-top:10vh ;
+  }
+  .home{
+    margin:0;
+  }
 }
