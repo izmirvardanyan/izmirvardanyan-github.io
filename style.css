@@ -258,15 +258,22 @@ body{
   }
 }
 @media (max-width: 610px) {
+  .mainDiv{
+    height:150vh;
+  }
   .slidemenu{
-    width: 35vw;
+    width: 45vw;
     margin:5vw 3vw;
   }
   .slidemenu label{
     margin-top: 2vh;
   }
   .infoSection{
-    margin-top:10vh ;
+    margin-top:-30vh ;
+  }
+  .imgs{
+    margin-top:25vh;
+    height: 50vh;
   }
   .home{
     margin:0;

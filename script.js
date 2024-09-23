@@ -34,7 +34,7 @@ function projectsHov(){
         document.querySelector(".home").style.fontSize = "medium";   
         document.querySelector(".aboutinfo").innerHTML = "Հանդես գալով որպես Կապալառու՝ կառուցել ենք բազմաթիվ բազմաբնակարան բնակելի համալիրներ և արտադրական նշանակության շինություններ մայրաքաղաքում և մարզերում։ Ունենալով երկար տարիների փորձ և հմտություն՝ մի շարք գործընկերների համար հանդիսանում ենք միակ Շինարարը։ Երևան քաղաքում բնակելի համալիրներից մի քանիսի կառուցման տարեթվերը և հասցեներն են՝";
         document.querySelector(".arrow").style.display = "block";   
-        document.querySelector(".imgs").style.marginTop = "5vh";
+        document.querySelector(".imgs").style.marginTop = "35vh";
         document.querySelector(".imgs").style.display = "block";
     }else{
         document.querySelector(".projects").style.color = "black";
@@ -45,7 +45,7 @@ function projectsHov(){
         document.querySelector(".home").style.fontSize = "medium";   
         document.querySelector(".aboutinfo").innerHTML = "Հանդես գալով որպես Կապալառու՝ կառուցել ենք բազմաթիվ բազմաբնակարան բնակելի համալիրներ և արտադրական նշանակության շինություններ մայրաքաղաքում և մարզերում։ Ունենալով երկար տարիների փորձ և հմտություն՝ մի շարք գործընկերների համար հանդիսանում ենք միակ Շինարարը։ Երևան քաղաքում բնակելի համալիրներից մի քանիսի կառուցման տարեթվերը և հասցեներն են՝";
         document.querySelector(".arrow").style.display = "block";   
-        document.querySelector(".imgs").style.marginTop = "0vh";
+        document.querySelector(".imgs").style.marginTop = "25vh";
 
     }
 
@@ -87,7 +87,7 @@ function homeHov(){
         document.querySelector(".aboutUs").style.fontSize = "medium";
         document.querySelector(".arrow").style.display = "none";   
         document.querySelector(".aboutinfo").innerHTML = "ԱՁ Իզմիր Վարդանյանը գործունեություն է ծավալում 2012թ․ -ից։ Մենք կատարում ենք որակյալ շինարարական աշխատանքներ։ Տարիների ընթացքում գրավել ենք մեր ուրույն տեղը ոլորտի լավագույնների մեջ՝ ստեղծելով պրոֆեսիոնալ թիմ և լինելով հուսալի գործընկեր"
-        document.querySelector(".imgs").style.marginTop = "0vh";
+        document.querySelector(".imgs").style.marginTop = "25vh";
         document.querySelector(".imgs").style.display = "block";
     }else{
         document.querySelector(".home").style.color = "black";
@@ -99,7 +99,7 @@ function homeHov(){
         document.querySelector(".aboutUs").style.fontSize = "medium";
         document.querySelector(".arrow").style.display = "none";   
         document.querySelector(".aboutinfo").innerHTML = "ԱՁ Իզմիր Վարդանյանը գործունեություն է ծավալում 2012թ․ -ից։ Մենք կատարում ենք որակյալ շինարարական աշխատանքներ։ Տարիների ընթացքում գրավել ենք մեր ուրույն տեղը ոլորտի լավագույնների մեջ՝ ստեղծելով պրոֆեսիոնալ թիմ և լինելով հուսալի գործընկեր"
-        document.querySelector(".imgs").style.marginTop = "0vh";
+        document.querySelector(".imgs").style.marginTop = "25vh";
 
     }
     
